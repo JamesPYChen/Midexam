@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="specialcell" rowHeight="204" id="KGk-i7-Jjw" customClass="SpecialTableViewCell" customModule="MovieExam" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="457" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="751" verticalHuggingPriority="751" image="picture" translatesAutoresizingMaskIntoConstraints="NO" id="9pn-mM-bZg">
+                        <rect key="frame" x="8" y="8" width="180" height="181"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="181" id="0r8-F6-poq"/>
+                            <constraint firstAttribute="width" constant="180" id="yIW-0V-YsG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上映日期2016-08-27" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ina-BN-uRi">
+                        <rect key="frame" x="299" y="169" width="126" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的少女時代" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brG-6p-q2H">
+                        <rect key="frame" x="196" y="8" width="102" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ina-BN-uRi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="161" id="04c-Su-8Lg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ina-BN-uRi" secondAttribute="trailing" constant="-3" id="26A-ut-4Oi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ina-BN-uRi" secondAttribute="bottom" constant="6.5" id="6UJ-io-Tin"/>
+                    <constraint firstAttribute="topMargin" secondItem="9pn-mM-bZg" secondAttribute="top" id="Fhj-9d-7U3"/>
+                    <constraint firstItem="ina-BN-uRi" firstAttribute="leading" secondItem="9pn-mM-bZg" secondAttribute="trailing" constant="111" id="FyV-7X-D7a"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9pn-mM-bZg" secondAttribute="trailing" constant="234" id="Hu4-RZ-3ky"/>
+                    <constraint firstItem="brG-6p-q2H" firstAttribute="leading" secondItem="9pn-mM-bZg" secondAttribute="trailing" constant="8" id="fbZ-1F-hQR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="9pn-mM-bZg" secondAttribute="bottom" constant="2.5" id="n4K-XK-s7Y"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="brG-6p-q2H" secondAttribute="bottom" constant="162.5" id="oVZ-w6-nq7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="brG-6p-q2H" secondAttribute="trailing" constant="124" id="qQl-8G-e8m"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="9pn-mM-bZg" secondAttribute="leading" id="uhD-aU-igU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CellImageView" destination="9pn-mM-bZg" id="3Dt-tU-TDJ"/>
+                <outlet property="CellLabel" destination="brG-6p-q2H" id="VJp-HR-ifL"/>
+                <outlet property="CellSideLabel" destination="ina-BN-uRi" id="CxN-62-LZv"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="picture" width="202" height="269"/>
+    </resources>
+</document>
