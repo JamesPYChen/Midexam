@@ -9,7 +9,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="mZZ-IM-HQd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VHy-CO-5MD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="9yi-VS-np5" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="SNZ-Fe-EAe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -21,6 +20,7 @@
                         <segue destination="IiQ-o2-O86" kind="relationship" relationship="viewControllers" id="t5j-eJ-1xz"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHy-CO-5MD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-704" y="232"/>
         </scene>
@@ -187,10 +187,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dwa-m3-2L6" firstAttribute="width" secondItem="MvB-yx-vwT" secondAttribute="width" id="B4F-08-Cm6"/>
                             <constraint firstItem="dwa-m3-2L6" firstAttribute="bottom" secondItem="EDz-aF-Jyf" secondAttribute="top" id="Bnw-dW-q9c"/>
+                            <constraint firstItem="dwa-m3-2L6" firstAttribute="height" secondItem="MvB-yx-vwT" secondAttribute="height" id="HBi-sI-qvH"/>
                             <constraint firstItem="dwa-m3-2L6" firstAttribute="leading" secondItem="MvB-yx-vwT" secondAttribute="leading" id="IHR-iv-aaB"/>
                             <constraint firstAttribute="trailing" secondItem="dwa-m3-2L6" secondAttribute="trailing" id="NAl-P1-G8X"/>
                             <constraint firstItem="dwa-m3-2L6" firstAttribute="top" secondItem="Pek-rK-RM5" secondAttribute="bottom" id="axq-yD-ckZ"/>
+                            <constraint firstItem="dwa-m3-2L6" firstAttribute="centerY" secondItem="MvB-yx-vwT" secondAttribute="centerY" id="ePf-jc-8Xw"/>
+                            <constraint firstItem="dwa-m3-2L6" firstAttribute="centerX" secondItem="MvB-yx-vwT" secondAttribute="centerX" id="qQI-G5-X79"/>
                         </constraints>
                     </view>
                     <connections>
